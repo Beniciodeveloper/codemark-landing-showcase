@@ -2,39 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* CODEMARK Design System - Professional Landing Page Colors & Gradients */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* CODEMARK Brand Colors */
+    --primary: 210 65% 25%; /* #154268 - Deep Blue */
+    --primary-foreground: 0 0% 100%;
+    
+    --brand-orange: 355 84% 62%; /* #f4566b */
+    --brand-orange-alt: 3 88% 67%; /* #f96b5b */
+    
+    /* Gradients */
+    --gradient-brand: linear-gradient(135deg, hsl(355 84% 62%), hsl(3 88% 67%));
+    --gradient-brand-reverse: linear-gradient(135deg, hsl(3 88% 67%), hsl(355 84% 62%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 65% 25%) 0%, hsl(210 70% 30%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 25% 98%) 100%);
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 25% 98%;
+    --secondary-foreground: 210 65% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 25% 96%;
+    --muted-foreground: 210 15% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 355 84% 62%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 92%;
+    --input: 210 20% 95%;
+    --ring: 210 65% 25%;
 
     --radius: 0.5rem;
 
@@ -94,6 +102,86 @@ All colors MUST be HSL.
   }
 }
 
+/* Custom Utilities & Components */
+@layer utilities {
+  .gradient-brand {
+    background: var(--gradient-brand);
+  }
+  
+  .gradient-brand-reverse {
+    background: var(--gradient-brand-reverse);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-section {
+    background: var(--gradient-section);
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+}
+
+@layer components {
+  .btn-brand {
+    @apply bg-accent text-accent-foreground px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+  
+  .btn-outline-brand {
+    @apply border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:scale-105;
+  }
+  
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -101,5 +189,9 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+  
+  html {
+    scroll-behavior: smooth;
   }
 }
