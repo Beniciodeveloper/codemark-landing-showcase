@@ -1,5 +1,4 @@
 import { CheckCircle } from 'lucide-react';
-import codeMark from '@/assets/codemark-logo.png';
 
 const HeroSection = () => {
   return (
@@ -9,9 +8,6 @@ const HeroSection = () => {
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in-up">
-            <div className="mb-8 flex justify-center lg:justify-start">
-              <img src={codeMark} alt="CODEMARK Logo" className="h-16 md:h-20" />
-            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-foreground">
               Transforme sua presença online com páginas que{' '}
               <span className="text-accent">
