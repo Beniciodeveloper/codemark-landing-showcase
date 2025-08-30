@@ -6,36 +6,36 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      name: 'Maria Silva',
-      company: 'Silva & Associados',
+      id: 1,
+      name: 'Dr. João Mendes',
+      company: 'SENAI Bahia',
+      role: 'Diretor de Comunicação',
+      content: 'A CODEMARK criou uma página institucional excepcional para os 80 anos do SENAI. O engajamento aumentou 200% e conseguimos transmitir toda nossa história de forma impactante.',
+      rating: 5
+    },
+    {
+      id: 2,
+      name: 'Mariana Ledebut',
+      company: 'Ledebut Cosméticos',
       role: 'CEO',
-      content: 'A CODEMARK transformou completamente nossa presença online. Nossa nova landing page gerou 300% mais leads nos primeiros dois meses. O profissionalismo e atenção aos detalhes são excepcionais.',
-      rating: 5,
-      result: '+300% em leads'
+      content: 'Nossa loja online de cosméticos teve um crescimento incrível! As vendas aumentaram 300% e a experiência de compra ficou perfeita. Recomendo a CODEMARK para qualquer e-commerce.',
+      rating: 5
     },
     {
-      name: 'João Santos',
-      company: 'TechStart Brasil',
-      role: 'Founder',
-      content: 'Trabalhar com a CODEMARK foi um divisor de águas para nossa startup. A landing page criada nos ajudou a captar nosso primeiro round de investimentos. Design impecável e resultados surpreendentes.',
-      rating: 5,
-      result: 'R$ 2M captados'
+      id: 3,
+      name: 'Rafael Takeovers',
+      company: 'Takeovers IA',
+      role: 'Fundador',
+      content: 'A landing page de vendas da nossa plataforma de IA superou todas as expectativas. Geramos 400% mais leads e o ROI foi excepcional. Profissionais de altíssimo nível!',
+      rating: 5
     },
     {
-      name: 'Ana Costa',
-      company: 'Boutique Premium',
-      role: 'Proprietária',
-      content: 'Desde o lançamento da nossa nova landing page, as vendas online triplicaram. A CODEMARK entendeu perfeitamente nosso público-alvo e criou uma experiência de compra excepcional.',
-      rating: 5,
-      result: '+250% em vendas'
-    },
-    {
-      name: 'Carlos Mendes',
-      company: 'Consultoria Estratégica',
-      role: 'Diretor',
-      content: 'A credibilidade que nossa empresa ganhou com a nova landing page é impressionante. Clientes comentam sobre o profissionalismo do site antes mesmo de falar sobre nossos serviços.',
-      rating: 5,
-      result: '+180% em credibilidade'
+      id: 4,
+      name: 'Dr. Amanda Silva',
+      company: 'AMS Advocacia',
+      role: 'Sócia Fundadora',
+      content: 'O site institucional transmite exatamente a credibilidade que precisávamos. Aumentamos 160% nossos clientes e 200% as consultas. Trabalho impecável da CODEMARK!',
+      rating: 5
     }
   ];
 
@@ -97,14 +97,6 @@ const TestimonialsSection = () => {
                 </p>
               </div>
               
-              <div className="text-right">
-                <div className="text-2xl font-bold text-accent">
-                  {testimonials[currentTestimonial].result}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  Resultado obtido
-                </div>
-              </div>
             </div>
 
             {/* Navigation */}
@@ -145,7 +137,7 @@ const TestimonialsSection = () => {
             <div className="text-muted-foreground">Projetos Entregues</div>
           </div>
           <div className="text-center p-6 bg-white rounded-xl shadow-lg">
-            <div className="text-3xl font-bold text-accent mb-2">98%</div>
+            <div className="text-3xl font-bold text-accent mb-2">100%</div>
             <div className="text-muted-foreground">Satisfação dos Clientes</div>
           </div>
           <div className="text-center p-6 bg-white rounded-xl shadow-lg">

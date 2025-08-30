@@ -19,12 +19,12 @@
     --primary: 210 65% 25%; /* #154268 - Deep Blue */
     --primary-foreground: 0 0% 100%;
     
-    --brand-orange: 355 84% 62%; /* #f4566b */
+    --brand-orange: 3 88% 67%; /* #f96b5b */
     --brand-orange-alt: 3 88% 67%; /* #f96b5b */
     
     /* Gradients */
-    --gradient-brand: linear-gradient(135deg, hsl(355 84% 62%), hsl(3 88% 67%));
-    --gradient-brand-reverse: linear-gradient(135deg, hsl(3 88% 67%), hsl(355 84% 62%));
+    --gradient-brand: linear-gradient(135deg, hsl(3 88% 67%), hsl(3 88% 67%));
+    --gradient-brand-reverse: linear-gradient(135deg, hsl(3 88% 67%), hsl(3 88% 67%));
     --gradient-hero: linear-gradient(135deg, hsl(210 65% 25%) 0%, hsl(210 70% 30%) 100%);
     --gradient-section: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 25% 98%) 100%);
 
@@ -34,7 +34,7 @@
     --muted: 210 25% 96%;
     --muted-foreground: 210 15% 55%;
 
-    --accent: 355 84% 62%;
+    --accent: 3 88% 67%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;

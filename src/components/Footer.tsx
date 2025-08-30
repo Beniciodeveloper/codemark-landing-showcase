@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,16 +20,12 @@ const Footer = () => {
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <Mail size={18} className="text-accent" />
-                <span className="text-white/80">contato@codemark.com.br</span>
-              </div>
-              <div className="flex items-center gap-3">
                 <Phone size={18} className="text-accent" />
-                <span className="text-white/80">(11) 99999-9999</span>
+                <span className="text-white/80">(71) 99276-8027</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin size={18} className="text-accent" />
-                <span className="text-white/80">São Paulo, SP - Brasil</span>
+                <span className="text-white/80">Salvador, BA - Brasil</span>
               </div>
             </div>
           </div>
@@ -101,8 +97,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-white/60">
-            © {currentYear} CODEMARK. Todos os direitos reservados. 
-            Desenvolvido com ❤️ para transformar negócios online.
+            © {currentYear} CODEMARK. Todos os direitos reservados.
           </p>
         </div>
       </div>
