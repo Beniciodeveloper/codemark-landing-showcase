@@ -15,15 +15,15 @@ const ProjectsSection = () => {
   const allProjects = [
     {
       id: 1,
-      title: 'Senai 80 Anos',
+      title: 'AMS Advocacia',
       category: 'Site Institucional',
-      description: 'Página institucional desenvolvida para comemoração dos 80 anos do SENAI, destacando a história e conquistas da instituição.',
-      image: senai80Anos,
-      link: 'https://www.senaibahia.com.br/senai-80-anos',
+      description: 'Site desenvolvido para empresa de advocacia com foco em transmitir confiança e profissionalismo.',
+      image: amsAdv,
+      link: 'https://www.amsadvs.com.br/',
       results: [
-        '+200% em engajamento',
-        '+150% em visitantes',
-        '+90% em tempo na página'
+        '+160% em clientes',
+        '+200% em consultas',
+        '+130% em autoridade'
       ],
     },
     {
@@ -41,15 +41,15 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      title: 'Takeovers',
-      category: 'Landing Page',
-      description: 'Página de vendas especializada em inteligência artificial com foco em conversão e geração de leads.',
-      image: takeovers,
-      link: 'https://www.takeovers.com.br/',
+      title: 'Site para Psicólogos',
+      category: 'Site Institucional',
+      description: 'Site desenvolvido com foco em psicólogos, priorizando confiança e acolhimento aos pacientes.',
+      image: psicologia,
+      link: 'https://gentle-soul-landing-page.vercel.app',
       results: [
-        '+400% em leads',
-        '+250% em conversão',
-        '+150% em ROI'
+        '+170% em consultas',
+        '+200% em agendamentos',
+        '+140% em confiança'
       ],
     },
     {
@@ -67,15 +67,15 @@ const ProjectsSection = () => {
     },
     {
       id: 5,
-      title: 'AMS Advocacia',
-      category: 'Site Institucional',
-      description: 'Site desenvolvido para empresa de advocacia com foco em transmitir confiança e profissionalismo.',
-      image: amsAdv,
-      link: 'https://www.amsadvs.com.br/',
+      title: 'Takeovers',
+      category: 'Landing Page',
+      description: 'Página de vendas especializada em inteligência artificial com foco em conversão e geração de leads.',
+      image: takeovers,
+      link: 'https://www.takeovers.com.br/',
       results: [
-        '+160% em clientes',
-        '+200% em consultas',
-        '+130% em autoridade'
+        '+400% em leads',
+        '+250% em conversão',
+        '+150% em ROI'
       ],
     },
     {
@@ -94,7 +94,7 @@ const ProjectsSection = () => {
     {
       id: 7,
       title: 'Betilhas',
-      category: 'Landing Page',
+      category: 'SaaS',
       description: 'Site desenvolvido com foco em apostas integrado com inteligência artificial para melhor experiência.',
       image: betilhas,
       link: 'https://www.betilhas.com.br/',
@@ -119,15 +119,15 @@ const ProjectsSection = () => {
     },
     {
       id: 9,
-      title: 'Site para Psicólogos',
+      title: 'Senai 80 Anos',
       category: 'Site Institucional',
-      description: 'Site desenvolvido com foco em psicólogos, priorizando confiança e acolhimento aos pacientes.',
-      image: psicologia,
-      link: 'https://gentle-soul-landing-page.vercel.app',
+      description: 'Página institucional desenvolvida para comemoração dos 80 anos do SENAI, destacando a história e conquistas da instituição.',
+      image: senai80Anos,
+      link: 'https://www.senaibahia.com.br/senai-80-anos',
       results: [
-        '+170% em consultas',
-        '+200% em agendamentos',
-        '+140% em confiança'
+        '+200% em engajamento',
+        '+150% em visitantes',
+        '+90% em tempo na página'
       ],
     },
     {
