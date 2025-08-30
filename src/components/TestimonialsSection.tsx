@@ -7,14 +7,6 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Dr. João Mendes',
-      company: 'SENAI Bahia',
-      role: 'Diretor de Comunicação',
-      content: 'A CODEMARK criou uma página institucional excepcional para os 80 anos do SENAI. O engajamento aumentou significativamente e conseguimos transmitir toda nossa história de forma impactante.',
-      rating: 5
-    },
-    {
-      id: 2,
       name: 'Bruno Rangel',
       company: 'Ledebut',
       role: 'CEO',
@@ -22,7 +14,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 3,
+      id: 2,
       name: 'Rafael Andrade',
       company: 'Takeovers IA',
       role: 'Fundador',
@@ -30,7 +22,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 4,
+      id: 3,
       name: 'Gabriela Sady',
       company: 'AMS Advocacia',
       role: 'Sócia Fundadora',

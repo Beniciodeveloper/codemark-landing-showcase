@@ -104,32 +104,55 @@
 
 /* Custom Utilities & Components */
 @layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 1.2s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
   .gradient-brand {
     background: var(--gradient-brand);
   }
-  
+
   .gradient-brand-reverse {
     background: var(--gradient-brand-reverse);
   }
-  
+
   .gradient-hero {
     background: var(--gradient-hero);
   }
-  
+
   .gradient-section {
     background: var(--gradient-section);
   }
-  
-  .animate-fade-in-up {
-    animation: fadeInUp 0.6s ease-out forwards;
+
+  .section-padding {
+    padding: 6rem 0;
   }
-  
-  .animate-fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
+
+  .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
   }
-  
-  .animate-scale-in {
-    animation: scaleIn 0.5s ease-out forwards;
+
+  .shadow-3xl {
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -168,6 +191,17 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 

@@ -41,7 +41,7 @@ const ImportanceSection = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-fade-in-up group"
+              className="bg-white p-6 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-2 animate-fade-in-up group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="w-12 h-12 gradient-brand rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
