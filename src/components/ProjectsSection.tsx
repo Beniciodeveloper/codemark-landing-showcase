@@ -163,14 +163,7 @@ const ProjectsSection = () => {
 
         <div className="grid lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <a
-              key={project.id}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-up group block"
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group block" key={project.id}>
               <div className="relative overflow-hidden">
                 <img
                   src={project.image}

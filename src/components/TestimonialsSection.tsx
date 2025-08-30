@@ -10,31 +10,31 @@ const TestimonialsSection = () => {
       name: 'Dr. João Mendes',
       company: 'SENAI Bahia',
       role: 'Diretor de Comunicação',
-      content: 'A CODEMARK criou uma página institucional excepcional para os 80 anos do SENAI. O engajamento aumentou 200% e conseguimos transmitir toda nossa história de forma impactante.',
+      content: 'A CODEMARK criou uma página institucional excepcional para os 80 anos do SENAI. O engajamento aumentou significativamente e conseguimos transmitir toda nossa história de forma impactante.',
       rating: 5
     },
     {
       id: 2,
-      name: 'Mariana Ledebut',
-      company: 'Ledebut Cosméticos',
+      name: 'Bruno Rangel',
+      company: 'Ledebut',
       role: 'CEO',
-      content: 'Nossa loja online de cosméticos teve um crescimento incrível! As vendas aumentaram 300% e a experiência de compra ficou perfeita. Recomendo a CODEMARK para qualquer e-commerce.',
+      content: 'Trabalhar com a CODEMARK foi uma experiência incrível. Nossa loja online de cosméticos teve um crescimento extraordinário nas vendas e conversão. O design é moderno e a experiência de compra é perfeita.',
       rating: 5
     },
     {
       id: 3,
-      name: 'Rafael Takeovers',
+      name: 'Rafael Andrade',
       company: 'Takeovers IA',
       role: 'Fundador',
-      content: 'A landing page de vendas da nossa plataforma de IA superou todas as expectativas. Geramos 400% mais leads e o ROI foi excepcional. Profissionais de altíssimo nível!',
+      content: 'A página de vendas criada pela CODEMARK superou todas nossas expectativas. Conseguimos muito mais leads e conversões do que imaginávamos. O foco em inteligência artificial foi fundamental para nosso sucesso.',
       rating: 5
     },
     {
       id: 4,
-      name: 'Dr. Amanda Silva',
+      name: 'Gabriela Sady',
       company: 'AMS Advocacia',
       role: 'Sócia Fundadora',
-      content: 'O site institucional transmite exatamente a credibilidade que precisávamos. Aumentamos 160% nossos clientes e 200% as consultas. Trabalho impecável da CODEMARK!',
+      content: 'O site institucional transmite exatamente a credibilidade que precisávamos. Trouxe muito mais clientes e consultas para nosso escritório. Trabalho impecável da CODEMARK!',
       rating: 5
     }
   ];
