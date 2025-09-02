@@ -3,13 +3,13 @@ import codemarkLogoCircle from '@/assets/codemark_logo_circle.webp';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-background to-secondary/20">
+    <section id="home" className="relative min-h-screen flex items-start sm:items-center overflow-hidden bg-gradient-to-br from-background to-secondary/20 pt-20 sm:pt-0">
 
       {/* Content */}
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-foreground">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-foreground sm:mt-[15px] ">
               Transforme sua presença online com páginas que{' '}
               <span className="text-accent">
                 convertem e impactam!
